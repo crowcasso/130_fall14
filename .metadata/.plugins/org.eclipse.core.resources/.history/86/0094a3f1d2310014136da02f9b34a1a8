@@ -1,0 +1,15 @@
+package ball;
+
+import processing.core.PApplet;
+
+
+public class Ball extends PApplet {
+
+	public void setup() {
+		size (512, 512);
+	}
+
+	public void draw() {
+		ellipse(width/2, height/2, 100, 100);
+	}
+}

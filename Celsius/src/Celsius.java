@@ -1,4 +1,8 @@
-
+/**
+ * Compute Celsius given Fahrenheit
+ * 
+ * @author Joel Hollingsworth
+ */
 public class Celsius {
 
 	public static void main(String[] args) {
