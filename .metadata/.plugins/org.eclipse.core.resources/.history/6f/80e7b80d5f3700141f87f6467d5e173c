@@ -1,0 +1,15 @@
+
+public class LearningMethods {
+
+	public static void main(String[] args) {
+		printMessage();
+		printMessage();
+	}
+	
+	public static void printMessage() {
+		System.out.println("This is the first message");
+		System.out.println("My second message");
+		System.out.println("Ok ... I'm done!");
+	}
+
+}

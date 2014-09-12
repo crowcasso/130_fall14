@@ -1,0 +1,26 @@
+package parliament;
+
+import processing.core.PApplet;
+
+
+public class Parliament extends PApplet {
+
+	public void setup() {
+		size(800, 300);
+		smooth();
+	}
+
+	public void draw() {
+		displayOwl(100, 100);
+	}
+	
+	public void displayOwl(float x, float y) {
+		pushMatrix();
+		translate(width/2, height/2);
+		
+		// your owl code
+		ellipse(0, 0, 50, 50);
+		
+		popMatrix();
+	}
+}

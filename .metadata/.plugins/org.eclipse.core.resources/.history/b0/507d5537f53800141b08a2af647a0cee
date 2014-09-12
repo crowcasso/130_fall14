@@ -1,0 +1,10 @@
+package parliament;
+
+public class Owl {
+	
+	private float x;
+	private float y;
+	
+	
+
+}

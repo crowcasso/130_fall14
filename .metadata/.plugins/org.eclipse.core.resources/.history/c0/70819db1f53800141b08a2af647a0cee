@@ -1,0 +1,46 @@
+package parliament;
+
+public class Owl {
+	
+	private float x;
+	private float y;
+	
+	private PApplet p;
+	
+	public Owl(PApplet pApplet) {
+		p = pApplet;
+	}
+	
+	public void displayOwl(float x, float y) {
+		pushMatrix();
+		translate(x, y);
+		
+		// body
+		strokeWeight(70);
+		line(0, -35, 0, -65);
+		
+		// eye sockets
+		noStroke();
+		fill(255);
+		ellipse(17, -65, 35, 35);
+		ellipse(-17, -65, 35, 35);
+		
+		// mouth area
+		fill(255);
+		strokeWeight(1);
+		arc(0, -65, 70, 70, 0, PI);
+	
+		// eyes
+		stroke(0);
+		strokeWeight(1);
+		fill(0);
+		ellipse(17, -65, 5, 5);
+		ellipse(-17, -65, 5, 5);
+		
+		// nose
+		quad(0, -60, 3, -55, 0, -50, -3, -55);
+		
+		popMatrix();
+	}
+
+}
