@@ -11,20 +11,23 @@ import processing.core.PApplet;
 public class Parliament extends PApplet {
 
 	Owl fluffy;
+	Owl fluffyjr;
 	
 	public void setup() {
-		size(800, 300);
+		size(800, 600);
 		smooth();
+		
+		fluffy = new Owl(this, width/2, height/2);
+		//fluffyjr = new Owl(this, 500, 150);
 	}
 
 	public void draw() {
+		background(128);
 		
-	}
-	
-	public void mousePressed() {
-		fluffy = new Owl(this, mouseX, mouseY);
+		fluffy.move();
 		fluffy.displayOwl();
+		
+		//fluffyjr.displayOwl();
 	}
-	
 
 }

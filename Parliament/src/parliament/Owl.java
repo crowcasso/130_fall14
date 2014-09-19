@@ -15,6 +15,13 @@ public class Owl {
 		y = y1;
 	}
 	
+	public void move() {
+		float rX = (float) (Math.random() * 6) - 3;
+		float rY = (float) (Math.random() * 6) - 3;
+		x = x + rX;
+		y = y + rY;
+	}
+	
 	public void displayOwl() {
 		p.pushMatrix();
 		p.translate(x, y);
