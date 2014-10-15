@@ -2,15 +2,18 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="org.jbox2d.common.Vec2"/>
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.FixtureDef"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="processing.core.PImage"/>
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.Body"/>
 <fullyQualifiedTypeName name="shiffman.box2d.Box2DProcessing"/>
-<fullyQualifiedTypeName name="processing.core.PApplet"/>
 <fullyQualifiedTypeName name="org.jbox2d.collision.shapes.PolygonShape"/>
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.BodyDef"/>
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.BodyType"/>
+<fullyQualifiedTypeName name="processing.core.PShape"/>
+<fullyQualifiedTypeName name="java.awt.Canvas"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="processing.core.PApplet"/>
 </qualifiedTypeNameHistroy>

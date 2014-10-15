@@ -18,7 +18,7 @@ public class Breakout extends PApplet {
 	private final int NUM_BRICKS_PER_ROW = 10;
 	private final int NUM_BRICKS_ROW = 10;
 	private final int BRICK_SEP = 2;
-	private final int BRICK_WIDTH = WIDTH / NUM_BRICKS_PER_ROW - BRICK_SEP;
+	private final int BRICK_WIDTH = SCREEN_WIDTH / NUM_BRICKS_PER_ROW - BRICK_SEP;
 	private final int BRICK_HEIGHT = 8;
 	private final int BRICK_Y_OFFSET = 70;
 
@@ -36,9 +36,12 @@ public class Breakout extends PApplet {
 
 
 	public void setup() {
+		size(SCREEN_WIDTH, SCREEN_HEIGHT);
 		brickWall = new BrickWall(this);
 		
 		/* FIXME: Create and add Rectangle objects to brickWall */
+		Rectangle rect = new Rectangle(this, 30, 70, 80, 8, RED);
+		brickWall.add(rect);
 	}
 
 	public void draw() {

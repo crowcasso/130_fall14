@@ -1,5 +1,7 @@
 package breakout;
 
+import processing.core.PApplet;
+
 /**
  * Represents a rectangle for the game of Breakout.
  * 
@@ -10,22 +12,42 @@ package breakout;
 
 public class Rectangle {
 	
+	// instance variables
+	private float x, y;
+	private float width, height;
+	private int color;
+	private PApplet p;
+	
+	// constructor
+	public Rectangle(PApplet pApplet, float aX, float aY, 
+			float aWidth, float aHeight, int aColor) {
+		x = aX;
+		y = aY;
+		width = aWidth;
+		height = aHeight;
+		color = aColor;
+		p = pApplet;
+	}
+	
 	public float getX() {
-		return 0;
+		return x;
 	}
 	
 	public float getY() {
-		return 0;
+		return y;
 	}
 	
 	public float getWidth() {
-		return 0;
+		return width;
 	}
 	
 	public float getHeight() {
-		return 0;
+		return height;
 	}
 	
 	public void draw() {
+		p.noStroke();
+		p.fill(color);
+		p.rect(x, y, width, height);
 	}
 }
