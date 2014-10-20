@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="org.jbox2d.common.Vec2"/>
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.FixtureDef"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="processing.core.PImage"/>
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.Body"/>
 <fullyQualifiedTypeName name="shiffman.box2d.Box2DProcessing"/>
 <fullyQualifiedTypeName name="org.jbox2d.collision.shapes.PolygonShape"/>
@@ -15,5 +14,6 @@
 <fullyQualifiedTypeName name="java.awt.Canvas"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="processing.core.PImage"/>
 <fullyQualifiedTypeName name="processing.core.PApplet"/>
 </qualifiedTypeNameHistroy>
