@@ -42,6 +42,12 @@ public class Breakout extends PApplet {
 		/* FIXME: Create and add Rectangle objects to brickWall */
 		Rectangle rect = new Rectangle(this, 30, 70, 80, 8, RED);
 		brickWall.add(rect);
+		
+		rect = new Rectangle(this, 30, 80, 80, 8, ORANGE);
+		brickWall.add(rect);
+		
+		rect = new Rectangle(this, 30, 90, 80, 8, BLUE);
+		brickWall.add(rect);
 	}
 
 	public void draw() {
@@ -51,5 +57,15 @@ public class Breakout extends PApplet {
 		
 		// draws the brick wall
 		brickWall.draw();
+	}
+	
+	@Override
+	public void mousePressed() {
+		Rectangle rect = brickWall.getBrickAt(mouseX, mouseY);
+		if (rect != null) {
+			brickWall.remove(rect);
+		} else {
+			System.out.println("no brick!");
+		}
 	}
 }

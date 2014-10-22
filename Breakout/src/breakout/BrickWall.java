@@ -43,6 +43,11 @@ public class BrickWall {
 		
 		return null;
 	}
+	
+	// remove a brick from the wall
+	public void remove(Rectangle brick) {
+		wall.remove(brick);
+	}
 
 	// draw the wall
 	public void draw() {
