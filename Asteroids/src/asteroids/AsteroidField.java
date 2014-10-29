@@ -5,16 +5,21 @@ import processing.core.PApplet;
 
 public class AsteroidField extends PApplet {
 	
-	private Asteroid asteroid;
+	private Asteroid [] asteroids;
 
 	public void setup() {
 		size(800, 600);
-		asteroid = new Asteroid(this);
+		asteroids = new Asteroid[50];
+		for (int i = 0; i < asteroids.length; i++) {
+			asteroids[i] = new Asteroid(this);
+		}
 	}
 
 	public void draw() {
 		background(0);
-		asteroid.update();
-		asteroid.draw();
+		for (int i = 0; i < asteroids.length; i++) {
+			asteroids[i].update();
+			asteroids[i].draw();
+		}
 	}
 }

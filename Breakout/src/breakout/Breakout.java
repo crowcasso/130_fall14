@@ -49,6 +49,16 @@ public class Breakout extends PApplet {
 		rect = new Rectangle(this, 30, 90, 80, 8, BLUE);
 		brickWall.add(rect);
 	}
+	
+	// FIXME delete later
+	public void mousePressed() {
+		Rectangle brick = brickWall.getBrickAt(mouseX, mouseY);
+		if (brick != null) {
+			brickWall.remove(brick);
+		} else {
+			System.out.println("no brick");
+		}
+	}
 
 	public void draw() {
 		
@@ -57,15 +67,5 @@ public class Breakout extends PApplet {
 		
 		// draws the brick wall
 		brickWall.draw();
-	}
-	
-	@Override
-	public void mousePressed() {
-		Rectangle rect = brickWall.getBrickAt(mouseX, mouseY);
-		if (rect != null) {
-			brickWall.remove(rect);
-		} else {
-			System.out.println("no brick!");
-		}
 	}
 }

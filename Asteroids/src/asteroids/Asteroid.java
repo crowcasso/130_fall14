@@ -42,16 +42,27 @@ public class Asteroid {
 		x = x + vx;
 		y = y + vy;
 		
+		if (x > p.getWidth()) {
+			x = -image.width;
+		} else if (x < -image.width) {
+			x = p.getWidth();
+		}
+		
+		if (y < -image.height) {
+			y = p.getHeight();
+		} else if (y > p.getHeight()) {
+			y = -image.height;
+		}
+		
+		
 		angle = angle + 0.01f;
-		
-		
 	}
 	
 	public void draw() {
 		p.pushMatrix();
 		p.translate(x + image.width/2, y + image.height/2);
 		p.rotate(angle);
-		p.image(image, x, y);
+		p.image(image, -image.width/2, -image.height/2);
 		p.popMatrix();
 	}
 	
