@@ -12,8 +12,8 @@
 <fullyQualifiedTypeName name="org.jbox2d.dynamics.BodyType"/>
 <fullyQualifiedTypeName name="processing.core.PShape"/>
 <fullyQualifiedTypeName name="java.awt.Canvas"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="processing.core.PImage"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="processing.core.PApplet"/>
 </qualifiedTypeNameHistroy>
